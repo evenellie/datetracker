@@ -1,1 +1,8 @@
 <%= link_to "Add Date", new_event_path %>
+
+<h2>Here are your dates in the next month:</h2>
+<ul>
+  <% @events.each do |event| %>
+    <li><%= link_to event.description, event %> on <%= event.event %></li>
+  <% end %>
+</ul>
