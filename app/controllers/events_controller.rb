@@ -3,6 +3,14 @@ class EventsController < ApplicationController
   def index
     @events = Event.all
 
+    # Create dates array to load in all dates
+    # dates = []
+
+    # @events.each do |event|
+    #   if event.event > Time.current
+    # end
+
+
   end
 
   def new
